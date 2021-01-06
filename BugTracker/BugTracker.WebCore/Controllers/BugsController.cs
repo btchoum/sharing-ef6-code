@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Linq;
+using BugTracker.Data;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BugTracker.WebCore.Controllers
 {
@@ -6,14 +8,17 @@ namespace BugTracker.WebCore.Controllers
     [Route("[controller]")]
     public class BugsController : ControllerBase
     {
-        public BugsController()
+        private readonly BugsDbContext _context;
+        
+        public BugsController(BugsDbContext context)
         {
+            _context = context;
         }
 
         [HttpGet]
         public IActionResult GetBugs()
         {
-            return Ok();
+            return Ok(_context.Bugs.ToList());
         }
     }
 }
