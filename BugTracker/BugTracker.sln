@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugTracker.Web.Tests", "Bug
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugTracker.Data", "BugTracker.Data\BugTracker.Data.csproj", "{C8D198B3-D7EA-4661-B37F-6B1B58859F41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugTracker.WebCore", "BugTracker.WebCore\BugTracker.WebCore.csproj", "{977B8F29-5A1D-4622-9F59-8D718AF84A05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugTracker.WebCore.Tests", "BugTracker.WebCore.Tests\BugTracker.WebCore.Tests.csproj", "{1C3B445D-B35F-4252-ADF2-4C1B4F0FE720}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C8D198B3-D7EA-4661-B37F-6B1B58859F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D198B3-D7EA-4661-B37F-6B1B58859F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D198B3-D7EA-4661-B37F-6B1B58859F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977B8F29-5A1D-4622-9F59-8D718AF84A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977B8F29-5A1D-4622-9F59-8D718AF84A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977B8F29-5A1D-4622-9F59-8D718AF84A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977B8F29-5A1D-4622-9F59-8D718AF84A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3B445D-B35F-4252-ADF2-4C1B4F0FE720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3B445D-B35F-4252-ADF2-4C1B4F0FE720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3B445D-B35F-4252-ADF2-4C1B4F0FE720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3B445D-B35F-4252-ADF2-4C1B4F0FE720}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
