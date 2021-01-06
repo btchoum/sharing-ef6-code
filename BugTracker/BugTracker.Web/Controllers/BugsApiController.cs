@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Http;
 using BugTracker.Data;
+using BugTracker.Data.Features.Bugs;
 
 namespace BugTracker.Web.Controllers
 {
@@ -20,6 +21,21 @@ namespace BugTracker.Web.Controllers
         {
             var bugs = _context.Bugs.ToList();
             return Ok(bugs);
+        }
+
+        [HttpPost]
+        [Route("")]
+        public IHttpActionResult Create(CreateBugModel model)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            var bug = model.MapToBug();
+
+            _context.Bugs.Add(bug);
+
+            _context.SaveChanges();
+            
+            return Ok();
         }
     }
 }
